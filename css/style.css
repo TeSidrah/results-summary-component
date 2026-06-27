@@ -24,13 +24,15 @@ body{
 
 .result {
     padding: 2rem;
-    background-color: hsl(241, 81%, 54%);
-    color: hsl(0, 0%, 100%);
+    background: linear-gradient(
+    hsl(241, 81%, 54%, .8),
+    hsl(241, 81%, 54%, 1));
+    color: hsl(0, 0%, 100%, .5);
     font-weight: 500;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
     border-bottom-left-radius: 1.5rem;
     border-bottom-right-radius: 1.5rem;
 }
@@ -45,12 +47,40 @@ body{
     gap: 1rem;
 }
 
-h1, .result p {
-    font-size: 1.125rem;
-    color: hsl(0, 0%, 100%, .5);
+h1, .final-result p{
+    font-size: 1rem;
 }
 
+.note {
+    font-size: 1.125rem;
+    text-align: center;
+    padding: 0 4rem;
+}
 
+.final-result {
+    font-size: 1rem;
+    background: linear-gradient(
+        hsla(241, 72%, 46%, 1),
+        hsla(241, 72%, 46%, .1)
+    );
+    padding: 1.5rem 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.number {
+    font-size: 3rem;
+    color: hsl(0, 0%, 100%, 1);
+    font-weight: 900;
+}
+
+.rating {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%, 1);
+}
 
 @media screen and (min-width: 1024px) {
     body {
@@ -62,5 +92,8 @@ h1, .result p {
     }
     .result {
         border-radius: 1.5rem;
+    }
+    .note {
+        padding: 0;
     }
 }
