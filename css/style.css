@@ -15,7 +15,6 @@ body{
 
 .card {
     background-color: hsl(0, 0%, 100%);
-    font-size: 1.125rem;
     width: 100%;
     max-width: 37.5rem;
     display: flex;
@@ -24,7 +23,7 @@ body{
 }
 
 .result {
-    padding:1rem 2rem;
+    padding: 2rem;
     background-color: hsl(241, 81%, 54%);
     color: hsl(0, 0%, 100%);
     font-weight: 500;
@@ -35,6 +34,23 @@ body{
     border-bottom-left-radius: 1.5rem;
     border-bottom-right-radius: 1.5rem;
 }
+
+.summary {
+    color: hsl(224, 30%, 27%);
+    padding: 1rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+h1, .result p {
+    font-size: 1.125rem;
+    color: hsl(0, 0%, 100%, .5);
+}
+
+
 
 @media screen and (min-width: 1024px) {
     body {
