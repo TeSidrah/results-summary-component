@@ -38,7 +38,7 @@ Practice toward Frontend Mentor Newbie → Junior. Not client work — a deliber
 
 ## Live demo
 
-Not published yet.
+https://tesidrah.github.io/results-summary-component/
 
 ---
 
